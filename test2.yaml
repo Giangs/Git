@@ -1,1 +1,10 @@
-test2.yaml
+---
+- name: first playbook
+  host: all
+
+  tasks:
+    - name: IIS Web Server is installed.
+      win_feature:
+        name: Web-Server
+        state: present
+  
